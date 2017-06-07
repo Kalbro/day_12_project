@@ -19,10 +19,10 @@ var strings = [
 ];
 // A:
 var longestString = function(arrOfStr) {
-  console.log(arrOfStr);
+  //console.log(arrOfStr);
   var longestWord = "";
   for (var i = 0; i < arrOfStr.length; i++) {
-    console.log(arrOfStr[i], longestWord);
+    //console.log(arrOfStr[i], longestWord);
     if (arrOfStr[i].length > longestWord.length) {
       longestWord = arrOfStr[i];
     }
@@ -51,15 +51,38 @@ var numbers = [
 // Write a function `smallestNumber()` that accepts an array
 // and returns the smallest number in the array.
 // A:
+/*
+var numbers = [
+  1,
+  12,
+  4,
+  18,
+  9,
+  7,
+  11,
+  3,
+  101,
+  5,
+  6
+];
+*/
+
 var smallestNumber = function(arrOfNum) {
-  console.log(arrOfNum);
-  var leastNum = "10000";
+
+  //console.log(arrOfNum);
+
+  var leastNum = Infinity;
+
   for (var i = 0; i < arrOfNum.length; i++) {
-    console.log(arrOfNum[i], leastNum);
+
+    //console.log(arrOfNum[i], leastNum);
+
     if (arrOfNum[i] < leastNum) {
       leastNum = arrOfNum[i];
     }
+
   }
+
   return leastNum
 }
 
@@ -96,7 +119,7 @@ var arrayReverser = function(numberStr){
 
   for (var i = numberStr.length - 1; i >= 0; i--) {
 
-    console.log(numberStr[i]);
+    //console.log(numberStr[i]);
 
      newStr.push(numberStr[i]);
   }
@@ -118,7 +141,7 @@ var sumArrayOfNumbers = function(amount){
 
   for (var i = 0; i < amount.length; i++) {
     newAmount= newAmount + amount[i];
-console.log(newAmount)
+    //console.log(newAmount)
   }
   return newAmount;
 }
@@ -138,7 +161,7 @@ var numbersOver10 = function(amount){
      over10.push(amount[i]);
     }
   }
-  console.log(over10);
+  //console.log(over10);
   return over10;
 }
 console.assert(numbersOver10(numbers).toString() === "12,18,11,101", {'message': 'numbersOver10 should return "12,18,11,101"'});
@@ -195,7 +218,7 @@ var joinArrays  = function([amount1, amount2]){
   for (var i = 0; i < amount2.length; i++) {
     bothArrays.push(amount2[i]);
   }
-  console.log(bothArrays);
+  //console.log(bothArrays);
   return bothArrays
 }
 
